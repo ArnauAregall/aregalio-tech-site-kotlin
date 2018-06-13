@@ -1,3 +1,5 @@
+import org.apache.tools.ant.filters.*
+
 description = 'aregalio.tech Kotlin + Spring Boot + Gradle Demo Site'
 group = 'tech.aregalio'
 version = '0.0.1-SNAPSHOT'
@@ -51,5 +53,15 @@ dependencies {
 }
 
 processResources {
+    from 'src/main/resources/application.properties'
 	expand(project.properties)
+    filter(ReplaceTokens,
+            tokens: [
+                    description: project.description,
+                    version: project.version,
+                    repository: project.ext.repository,
+                    gradleVersion: project.gradle.gradleVersion,
+                    springBootVersion: project.ext.springBootVersion,
+                    kotlinVersion: project.ext.kotlinVersion
+            ])
 }
