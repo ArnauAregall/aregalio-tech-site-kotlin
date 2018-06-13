@@ -19,6 +19,12 @@ class HomeController @Autowired constructor(
     /* Much simpler, right? */
     fun Environment.get(key: String) : String = this.getProperty(key, "unknown")
 
+    @GetMapping("/home")
+    fun home(model: Model): String {
+        model["title"] = "Welcome"
+        return "home4"
+    }
+
     /**
      * Basic home controller
      */
