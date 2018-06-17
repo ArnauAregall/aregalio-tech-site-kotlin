@@ -11,7 +11,7 @@ import tech.aregalio.website.app.service.HomeService
 class HomeViewController @Autowired constructor(
         private val homeService: HomeService) {
 
-    @GetMapping("/home")
+    @GetMapping("/")
     fun home(model: Model): String {
         model.addAttribute("data", homeService.getHomeData())
         return "simple/home"
