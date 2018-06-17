@@ -10,3 +10,13 @@ http://aregalio.tech source code built with Kotlin, Spring Boot, and Java 8
 - View rendering with Mustache
 - Integrate with embedded database
 - Test! Test! Test!
+
+## Development w/ hot reload
+
+1. Run in a shell:
+
+        gradle build --continuous
+
+2. Start a new shell and run: 
+
+        gradle bootRun

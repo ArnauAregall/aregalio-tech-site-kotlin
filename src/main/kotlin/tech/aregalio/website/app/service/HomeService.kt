@@ -17,7 +17,7 @@ class HomeService @Autowired constructor(
     fun getHomeData() : HomeInfo {
         var homeInfo: HomeInfo = HomeInfo(
                 greeting = "Welcome!",
-                whoami = AboutInfo(
+                about = AboutInfo(
                         firstName = "Arnau",
                         lastName = "Aregall",
                         nickname = "${env.get("app.contact.nickname")}",

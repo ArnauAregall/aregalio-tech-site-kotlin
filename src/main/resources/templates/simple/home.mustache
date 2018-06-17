@@ -32,7 +32,7 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
     <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">{{data.whoami.firstName}} {{data.whoami.lastName}}</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">{{data.about.firstName}} {{data.about.lastName}}</a>
         <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button"
                 data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -61,8 +61,8 @@
         <img class="img-fluid mb-5 d-block mx-auto rounded-circle" src="img/arnau.jpeg" alt="">
         <h1 class="text-uppercase mb-0">{{data.greeting}}</h1>
         <hr class="star-light">
-        <h2 class="font-weight-light mb-0">My name is {{data.whoami.firstName}} {{data.whoami.lastName}},</h2>
-        <h2 class="font-weight-light mb-0">I'm a {{data.whoami.job}} working @ {{data.whoami.company}}</h2>
+        <h2 class="font-weight-light mb-0">My name is {{data.about.firstName}} {{data.about.lastName}},</h2>
+        <h2 class="font-weight-light mb-0">I'm a {{data.about.job}} working @ {{data.about.company}}.</h2>
     </div>
 </header>
 
@@ -143,17 +143,28 @@
         <hr class="star-light mb-5">
         <div class="row">
             <div class="col-lg-4 ml-auto">
-                <p class="lead">I'm a passionate software developer with over six years of professional experience on the software development industry,
-                    specialized on middle tier web development, Java, Cloud and Microservices Architectures technologies.
-                    Also I often assume a full-stack engineer role on most of the projects I participate.</p>
+                <p class="lead">
+                    I'm a passionate software developer with over six years of professional experience on the software
+                    development industry as <b>IT consultant</b> and <b>software architect</b>, specialized on <b>digital
+                    architecures</b>, web development, <b>Java EE</b>, <b>cloud applications</b> and <b>micro-services</b>.
+                </p>
             </div>
             <div class="col-lg-4 mr-auto">
                 <p class="lead">
-                    I consider myself a methodical, enthusiastic and hard-working professional, always willing to learn, to cooperate with my colleagues (team player? you name it!).
-                    One of my professional daily goals is to design and deliver high quality and valuable software solutions.
-                    <br/>
-                    When not coding or staring in front of my iMac screen, you'll probably catch me having fun with friends or family, listening to electronic or punk-rock music, or playing video-games.
+                    I consider myself a methodical, enthusiastic and hard-working professional, always willing to learn,
+                    to cooperate with my colleagues (team player? you name it!). One of my professional daily goals is
+                    to design and deliver high quality and valuable software solutions.
                 </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 ml-auto mr-auto">
+                <p class="lead">
+                    When not coding or staring in front of my iMac screen, you'll probably catch me spending time with
+                    my girlfriend, hanging around with friends, listening to electronic and punk-rock music,
+                    or maybe playing video-games. <span id="face"></span>
+                </p>
+                <script>(function(){document.getElementById('face').innerText = String.fromCodePoint(0x263A);})();</script>
             </div>
         </div>
         <div class="text-center mt-4">
@@ -253,12 +264,12 @@
             <div class="col-md-4">
                 <h4 class="text-uppercase mb-4">Built this with...</h4>
                 <p class="lead mb-0">
-                    {{#data.builtWith}}
+                    Render to you with thank's to {{#data.builtWith}}
                         {{#.}}
                             {{.}},
                         {{/.}}
-                    {{/data.builtWith}}
-                    <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+                    {{/data.builtWith}} and prettified using
+                    <a href="http://startbootstrap.com">Start Bootstrap</a> template.</p>
             </div>
         </div>
     </div>
@@ -266,7 +277,8 @@
 
 <div class="copyright py-4 text-center text-white">
     <div class="container">
-        <small>Copyright &copy; Your Website 2018</small>
+        <small>Copyright &copy; Arnau Aregall - aregalio.tech <span id="year"></span></small>
+        <script>(function(){document.getElementById('year').innerText = new Date().getFullYear()})()</script>
     </div>
 </div>
 
