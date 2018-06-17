@@ -28,5 +28,6 @@
 /nbdist/
 /.nb-gradle/
 
-### Custom ###
+### Logs ###
 *.log
+*.gz
