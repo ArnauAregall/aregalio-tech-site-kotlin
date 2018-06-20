@@ -14,7 +14,7 @@ class HomeViewController @Autowired constructor(
     @GetMapping("/")
     fun home(model: Model): String {
         model.addAttribute("data", homeService.getHomeData())
-        return "simple/home"
+        return "home"
     }
 
 }
