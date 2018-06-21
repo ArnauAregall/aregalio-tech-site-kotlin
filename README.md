@@ -1,5 +1,5 @@
 # aregalio-tech-site-kotlin
-http://aregalio.tech source code built with Kotlin, Spring Boot, and Java 8
+https://aregalio.tech source code repository, built with Kotlin, Spring Boot, and Java 8.
 
 ## Build status
 
@@ -7,8 +7,7 @@ http://aregalio.tech source code built with Kotlin, Spring Boot, and Java 8
 
 ## TODOs:
 
-- View rendering with Mustache
-- Integrate with embedded database
+- Integrate with embedded database ```// kids don't hardcode data like me```
 - Test! Test! Test!
 
 ## Development w/ hot reload
