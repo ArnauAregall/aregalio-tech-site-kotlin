@@ -11,13 +11,13 @@
     <title>{ arnauaregall }</title>
 
     <!-- Vendor -->
-    <link href="/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="/vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+          type="text/css">
     <!-- Custom -->
-    <link href="/css/freelancer.min.css" rel="stylesheet">
+    <link href="/css/main.min.css" rel="stylesheet">
 
 </head>
 
@@ -26,7 +26,8 @@
 <!-- Nav -->
 <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
     <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top" style="font-family: 'Courier New'">{ {{data.about.firstName}} {{data.about.lastName}} }</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top" style="font-family: 'Courier New'">{
+            {{data.about.firstName}} {{data.about.lastName}} }</a>
         <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button"
                 data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -53,13 +54,18 @@
         <hr class="star-light">
         <h2 class="font-weight-light mb-0">My name is {{data.about.firstName}} {{data.about.lastName}},</h2>
         <h2 class="font-weight-light mb-0">I'm a {{data.about.job}} working @ {{data.about.company}}</h2>
-        <h2 class="font-weight-light mb-0">and this is my personal landing site :).</h2>
+        <h2 class="font-weight-light mb-0">and this is my personal landing site :)</h2>
         <h2 class="font-weight-light mb-0"><br/></h2>
-        <h4 class="font-weight-light mb-0" style="color: #20613c; font-family: 'Courier New'; font-size: medium; font-style: italic">
-            // if (you.like(this)) ? this.repository.star(<a href="https://github.com/ArnauAregall/aregalio-tech-site-kotlin"
-                                                         style="color: white; text-underline: white" target="_blank">github</a>)
-                : this.repository.openIssue(<a href="https://github.com/ArnauAregall/aregalio-tech-site-kotlin/issues"
-                             style="color: white; text-underline: white" target="_blank">issues</a>).then().wait(604800000 /*one week*/).patiently()
+        <h4 class="font-weight-light mb-0"
+            style="color: #b1b1b1; font-family: 'Courier New'; font-size: medium; font-style: italic">
+            // if (you.like(this)) ? this.repository.star(<a
+                href="{{data.sourceCode}}"
+                style="color: white; text-underline: white" target="_blank">github</a>)
+            : this.repository.openIssue(<a href="{{data.sourceCode}}/issues"
+                                           style="color: white; text-underline: white" target="_blank">issues</a>)
+            <br/>
+            .then().wait(604800000
+            /*one week*/).patiently()
         </h4>
     </div>
 </header>
@@ -74,7 +80,8 @@
                 <p class="lead">
                     I'm a passionate software developer with over six years of professional experience on the software
                     development industry as <b>IT consultant</b> and <b>software architect</b>, specialized on <b>digital
-                    architecures</b>, web development, <b>Java EE</b>, <b>cloud applications</b> and <b>micro-services</b>.
+                    architecures</b>, web development, <b>Java EE</b>, <b>cloud applications</b> and
+                    <b>micro-services</b>.
                 </p>
             </div>
             <div class="col-lg-4 mr-auto">
@@ -92,13 +99,15 @@
                     my girlfriend, hanging around with friends, listening to electronic and punk-rock music,
                     or maybe playing video-games. <span id="face"></span>
                 </p>
-                <script>(function(){document.getElementById('face').innerText = String.fromCodePoint(0x263A);})();</script>
+                <script>(function () {
+                    document.getElementById('face').innerText = String.fromCodePoint(0x263A);
+                })();</script>
             </div>
         </div>
         <div class="text-center mt-4">
-            <a class="btn btn-xl btn-outline-light" href="#contact">
+            <a class="btn btn-xl btn-outline-light js-scroll-trigger" href="#contact">
                 <i class="fa fa-envelope mr-2"></i>
-                Could I help you? Contact me :)
+                Can I help you? Contact me :)
             </a>
         </div>
     </div>
@@ -115,7 +124,8 @@
                     <div class="control-group">
                         <div class="form-group floating-label-form-group controls mb-0 pb-2">
                             <label>Name</label>
-                            <input class="form-control" id="name" type="text" placeholder="What's your name?" required="required"
+                            <input class="form-control" id="name" type="text" placeholder="What's your name?"
+                                   required="required"
                                    data-validation-required-message="Please enter your name.">
                             <p class="help-block text-danger"></p>
                         </div>
@@ -123,7 +133,8 @@
                     <div class="control-group">
                         <div class="form-group floating-label-form-group controls mb-0 pb-2">
                             <label>Email Address</label>
-                            <input class="form-control" id="email" type="email" placeholder="You've got an e-mail right?"
+                            <input class="form-control" id="email" type="email"
+                                   placeholder="You've got an e-mail right?"
                                    required="required"
                                    data-validation-required-message="Please enter your email address.">
                             <p class="help-block text-danger"></p>
@@ -174,17 +185,20 @@
                 <h4 class="text-uppercase mb-4">Around the web</h4>
                 <ul class="list-inline mb-0">
                     <li class="list-inline-item">
-                        <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://github.com/ArnauAregall" target="_blank">
+                        <a class="btn btn-outline-light btn-social text-center rounded-circle"
+                           href="https://github.com/ArnauAregall" target="_blank">
                             <i class="fa fa-fw fa-github"></i>
                         </a>
                     </li>
                     <li class="list-inline-item">
-                        <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://twitter.com/ArnauAregall" target="_blank">
+                        <a class="btn btn-outline-light btn-social text-center rounded-circle"
+                           href="https://twitter.com/ArnauAregall" target="_blank">
                             <i class="fa fa-fw fa-twitter"></i>
                         </a>
                     </li>
                     <li class="list-inline-item">
-                        <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.linkedin.com/in/arnauaregall" target="_blank">
+                        <a class="btn btn-outline-light btn-social text-center rounded-circle"
+                           href="https://www.linkedin.com/in/arnauaregall" target="_blank">
                             <i class="fa fa-fw fa-linkedin"></i>
                         </a>
                     </li>
@@ -194,13 +208,16 @@
                 <h4 class="text-uppercase mb-4">Built with...</h4>
                 <p class="lead mb-0">
                     {{#data.builtWith}}
-                        {{#.}}
-                            {{.}},
-                        {{/.}}
+                    {{#.}}
+                    {{.}},
+                    {{/.}}
                     {{/data.builtWith}}
                     <br/>
                     Makeup by
-                    <a href="http://startbootstrap.com" target="_blank">Start Bootstrap</a> template (thx!).</p>
+                    <a href="http://startbootstrap.com" target="_blank">Start Bootstrap</a> template.
+                    <br/>
+                    Background image credits belong to <a href="https://www.awakenings.com/">Awakenings</a>.
+                </p>
             </div>
         </div>
     </div>
@@ -210,19 +227,19 @@
 <div id="copyright" class="copyright py-4 text-center text-white">
     <div class="container">
         <small>Copyright &copy; Arnau Aregall - aregalio.tech <span id="year"></span></small>
-        <script>(function(){document.getElementById('year').innerText = new Date().getFullYear()})()</script>
+        <script>(function () {
+            document.getElementById('year').innerText = new Date().getFullYear()
+        })()</script>
     </div>
 </div>
 
 <!-- Vendor -->
 <script src="/vendor/jquery/jquery.min.js"></script>
-<script src="/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+<script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
-<script src="/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 <!-- Custom -->
-<script src="js/jqBootstrapValidation.js"></script>
-<script src="js/contact_me.js"></script>
-<script src="js/freelancer.js"></script>
+<script src="js/jqBootstrapValidation.min.js"></script>
+<script src="js/app.js"></script>
 
 </body>
 
