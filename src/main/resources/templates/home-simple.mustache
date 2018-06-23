@@ -13,6 +13,7 @@
     <!-- Vendor -->
     <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/vendor/vegas/vegas.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
           type="text/css">
@@ -28,7 +29,7 @@
     <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top" style="font-family: 'Courier New'">{
             {{data.about.firstName}} {{data.about.lastName}} }</a>
-        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button"
+        <button class="navbar-toggler navbar-toggler-right text-uppercase text-white rounded" type="button"
                 data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
                 aria-expanded="false" aria-label="Toggle navigation">
             <i class="fa fa-bars"></i>
@@ -47,7 +48,7 @@
 </nav>
 
 <!-- Header -->
-<header class="masthead bg-primary text-white text-center">
+<header class="masthead bg-primary text-white text-center" id="header">
     <div class="container">
         <img class="img-fluid mb-5 d-block mx-auto rounded-circle" src="/img/profile.jpeg" alt="">
         <h1 class="text-uppercase mb-0">{{data.greeting}}</h1>
@@ -237,9 +238,11 @@
 <script src="/vendor/jquery/jquery.min.js"></script>
 <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="/vendor/vegas/vegas.min.js"></script>
 <!-- Custom -->
 <script src="js/jqBootstrapValidation.min.js"></script>
 <script src="js/app.js"></script>
+
 
 </body>
 

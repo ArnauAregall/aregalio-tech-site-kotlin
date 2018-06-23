@@ -99,6 +99,12 @@ $('#name').focus(function() {
     }
   });
 
+    // Vegas background
+    $("#about, #header").vegas({
+        slides: [
+            { src: '/img/bg.png', color: 'grey'}
+        ]
+    });
 
   // Closes responsive menu when a scroll trigger link is clicked
   $('.js-scroll-trigger').click(function() {
