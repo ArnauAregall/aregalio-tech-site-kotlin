@@ -100,7 +100,7 @@ $('#name').focus(function() {
   });
 
     // Vegas background
-    $("#about, #header").vegas({
+    $("#header").vegas({
         slides: [
             { src: '/img/bg.png', color: 'grey'}
         ]
