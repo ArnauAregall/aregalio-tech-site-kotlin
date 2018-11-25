@@ -50,29 +50,18 @@
 <!-- Header -->
 <header class="masthead bg-primary text-white text-center" id="header" style="text-shadow: 2px 2px black;">
     <div class="container">
-        <img class="img-fluid mb-5 d-block mx-auto rounded-circle" src="/img/profile.jpeg" alt="">
+        <img class="img-fluid mb-5 d-block mx-auto rounded-circle" src="/img/profile.jpeg" alt="" style="height: 350px">
         <h1 class="text-uppercase mb-0">{{data.greeting}}</h1>
         <hr class="star-light">
         <h2 class="font-weight-light mb-0">My name is {{data.about.firstName}} {{data.about.lastName}},</h2>
-        <h2 class="font-weight-light mb-0">I'm a {{data.about.job}} working @ {{data.about.company}}</h2>
+        <h2 class="font-weight-light mb-0">I'm a {{data.about.job}}</h2>
+        <h2 class="font-weight-light mb-0">working @ {{data.about.company}}</h2>
         <h2 class="font-weight-light mb-0">and this is my <a href="#">personal landing site</a> :)</h2>
         <h2 class="font-weight-light mb-0"><br/></h2>
 
     </div>
 
     <div class="container">
-        <h4 class="font-weight-light mb-0"
-            style="color: #b1b1b1; font-family: 'Courier New'; font-size: medium; font-style: italic">
-            // if (you.like(this)) ? this.repository.star(<a
-                href="{{data.sourceCode}}"
-                style="color: white; text-underline: white" target="_blank">github</a>)
-            : this.repository.openIssue(<a href="{{data.sourceCode}}/issues"
-                                           style="color: white; text-underline: white" target="_blank">issues</a>)
-            <br/>
-            .then().wait(604800000
-            /*one week*/).patiently()
-        </h4>
-        <h2 class="font-weight-light mb-0"><br/></h2>
         <h2 class="font-weight-light mb-0"><br/></h2>
     </div>
 

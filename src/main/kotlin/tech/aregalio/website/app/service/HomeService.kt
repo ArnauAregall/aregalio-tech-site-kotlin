@@ -16,13 +16,13 @@ class HomeService @Autowired constructor(
 
     fun getHomeData() : HomeInfo {
         var homeInfo: HomeInfo = HomeInfo(
-                greeting = "Welcome!",
+                greeting = "Hello!",
                 about = AboutInfo(
                         firstName = "Arnau",
                         lastName = "Aregall",
                         nickname = "${env.get("app.contact.nickname")}",
-                        job = "Software Architect",
-                        company = "everis - an NTT Data company",
+                        job = "Senior Software Architect and Digital Transformation Consultant",
+                        company = "everis (an NTT Data company)",
                         skills = listOf(
                                 "Java",
                                 "Java EE",
@@ -48,7 +48,7 @@ class HomeService @Autowired constructor(
                 ),
                 contact = ContactInfo(
                         email = "${env.get("app.contact.email")}",
-                        location = "Torelló, Barcelona"
+                        location = "Barcelona, Spain"
                 ),
                 builtWith = listOf(
                         "Java 8",

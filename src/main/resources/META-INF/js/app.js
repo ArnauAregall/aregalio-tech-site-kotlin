@@ -102,7 +102,7 @@ $('#name').focus(function() {
     // Vegas background
     $("#header").vegas({
         slides: [
-            { src: '/img/bg.png', color: 'grey'}
+            { src: '/img/bg.png', color: 'grey', }
         ]
     });
 
