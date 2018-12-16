@@ -7,8 +7,8 @@ https://aregalio.tech source code repository, built with Kotlin, Spring Boot, an
 
 ## TODOs:
 
-- Integrate with embedded database ```// kids don't hardcode data like me```
-- Test! Test! Test!
+- Integrate with embedded database ```// kids, please, don't hardcode data in your projects, this is just for playing```
+- Test!
 
 ## Development w/ hot reload
 
