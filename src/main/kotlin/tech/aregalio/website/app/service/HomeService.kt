@@ -51,7 +51,7 @@ class HomeService @Autowired constructor(
                         location = "Barcelona, Spain"
                 ),
                 builtWith = listOf(
-                        "Java 8",
+                        "Java 11",
                         "Kotlin ${env.get("app.kotlinVersion")}",
                         "Spring Boot ${env.get("app.springBootVersion")}",
                         "Gradle ${env.get("app.gradleVersion")}"

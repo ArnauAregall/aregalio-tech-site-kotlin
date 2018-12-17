@@ -1,8 +1,8 @@
 import org.apache.tools.ant.filters.*
 
-description = 'aregalio.tech Kotlin + Spring Boot + Gradle Demo Site'
-group = 'tech.aregalio'
-version = '0.0.1-SNAPSHOT'
+description = 'arnau.aregall.tech Kotlin + Spring Boot + Gradle Demo Site'
+group = 'tech.aregall.arnau'
+version = '1.0.0'
 
 buildscript {
 	ext {

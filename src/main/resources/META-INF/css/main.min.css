@@ -11,3 +11,51 @@ body{font-family:Lato}h1,h2,h3,h4,h5,h6{font-weight:700;font-family:Montserrat}h
     */
 }
 .bg-secondary{background-color:#2c3e50!important}.text-primary{color:#4ea3cd!important}.text-secondary{color:#2c3e50!important}.btn-primary{background-color:#4ea3cd;border-color:#4ea3cd}.btn-primary:active,.btn-primary:focus,.btn-primary:hover{background-color:#128f76;border-color:#128f76}.btn-secondary{background-color:#2c3e50;border-color:#2c3e50}.btn-secondary:active,.btn-secondary:focus,.btn-secondary:hover{background-color:#1a252f;border-color:#1a252f}
+/* --- Custom --- */
+a {
+    color: #00f8a0;
+}
+a:hover {
+    color: #00f8a0;
+}
+.btn-primary {
+    background-color: #45ad66 !important;
+    border-color: #5bbb79 !important;
+}
+.greeting {
+    text-shadow: -1px 1px black, 1px 1px black, 0px 6px 6px black, 1px -1px 0px black;
+    color: rgb(76, 243, 167);
+}
+.text-shadowed {
+    text-shadow: 2px 2px black, -1px -1px black, -1px 6px 11px black, 1px -1px black;
+    color: rgba(135, 206, 235, 1);
+}
+.text-attention {
+    color: #00f8a0 !important;
+    text-shadow: -1px 1px black, 1px 1px black, 0px 6px 6px black, 1px -1px 0px black;
+}
+a.text-attention:hover {
+    color: white !important;
+}
+#mainNav .navbar-nav>li.nav-item>a.nav-link.active {
+    background: rgba(104, 175, 210, 0.4);
+}
+mainNav .navbar-nav>li.nav-item>a.nav-link.active:active, #mainNav .navbar-nav>li.nav-item>a.nav-link.active:focus, #mainNav .navbar-nav>li.nav-item>a.nav-link.active:hover {
+    color: #fff;
+    background: #3c6477;
+}
+.star-light-border {
+    border-color: #273e51 !important;
+}
+.text-box {
+    background: rgba(0, 135, 111, 0.8);
+    border-radius: 15px;
+    padding: 15px;
+    text-shadow: 2px 2px 2px black;
+}
+a.btn-contact:hover {
+    color: black !important;
+}
+button.btn-submit {
+    background: rgba(0, 135, 111, 0.8);
+}

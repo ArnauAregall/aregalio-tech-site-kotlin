@@ -27,7 +27,7 @@
 <!-- Nav -->
 <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
     <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top" style="font-family: 'Courier New'">{
+        <a class="navbar-brand js-scroll-trigger text-attention" href="#page-top" style="font-family: 'Courier New'">{
             {{data.about.firstName}} {{data.about.lastName}} }</a>
         <button class="navbar-toggler navbar-toggler-right text-uppercase text-white rounded" type="button"
                 data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
@@ -37,10 +37,10 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item mx-0 mx-lg-1">
-                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About Me</a>
+                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger text-attention" href="#about">About Me</a>
                 </li>
                 <li class="nav-item mx-0 mx-lg-1">
-                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
+                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger text-attention" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -48,16 +48,19 @@
 </nav>
 
 <!-- Header -->
-<header class="masthead bg-primary text-white text-center" id="header" style="text-shadow: 2px 2px black;">
+<header class="masthead bg-primary text-white text-center" id="header">
     <div class="container">
-        <img class="img-fluid mb-5 d-block mx-auto rounded-circle" src="/img/profile.jpeg" alt="" style="height: 350px">
-        <h1 class="text-uppercase mb-0">{{data.greeting}}</h1>
-        <hr class="star-light">
-        <h2 class="font-weight-light mb-0">My name is {{data.about.firstName}} {{data.about.lastName}},</h2>
-        <h2 class="font-weight-light mb-0">I'm a {{data.about.job}}</h2>
-        <h2 class="font-weight-light mb-0">working @ {{data.about.company}}</h2>
-        <h2 class="font-weight-light mb-0">and this is my <a href="#">personal landing site</a> :)</h2>
-        <h2 class="font-weight-light mb-0"><br/></h2>
+        <img class="img-fluid mb-5 d-block mx-auto rounded-circle" src="/img/profile.jpeg" alt=""
+             style="height: 350px;border-style: ridge;border-color: skyblue;">
+        <h1 class="text-uppercase mb-0 greeting">{{data.greeting}}</h1>
+        <br>
+        <div class="text-box">
+            <h2 class="font-weight-light mb-0">My name is {{data.about.firstName}} {{data.about.lastName}},</h2>
+            <h2 class="font-weight-light mb-0">I'm a {{data.about.job}}</h2>
+            <h2 class="font-weight-light mb-0">working @ {{data.about.company}}</h2>
+            <h2 class="font-weight-light mb-0">and this is my <a href="#">personal landing site</a> :)</h2>
+            <h2 class="font-weight-light mb-0"><br/></h2>
+        </div>
 
     </div>
 
@@ -66,47 +69,60 @@
     </div>
 
     <div class="container text-white mb-0" id="about">
-        <h2 class="text-center text-uppercase text-white">About Me</h2>
-        <hr class="star-light mb-5">
-        <div class="row">
-            <div class="col-lg-4 ml-auto">
-                <p class="lead">
-                    I'm a passionate software developer with over six years of professional experience on the software
-                    development industry as <b>IT consultant</b> and <b>software architect</b>, specialized on <b>digital
-                    architecures</b>, web development, <b>Java EE</b>, <b>cloud applications</b> and
-                    <b>micro-services</b>.
-                </p>
+        <br>
+        <div class="text-box">
+            <h2 class="text-center text-uppercase text-white text-shadowed" style="font-size: 2.5em">About Me</h2>
+            <br>
+            <div class="row">
+                <div class="col-lg-4 ml-auto">
+                    <p class="lead">
+                        I'm a passionate software developer with over six years of experience as Technology Consultant
+                        and Software Architect.
+                    </p>
+                </div>
+                <div class="col-lg-4 ml-auto">
+                    <p class="lead">
+                        Specialized on Digital Architecture Technical Consulting and Digital Transformation: microservices,
+                        cloud applications, middle tier web apps (Java EE, application servers, intranets...),
+                        SOA, security and business-to-business integration.
+                    </p>
+                </div>
+                <div class="col-lg-4 mr-auto">
+                    <p class="lead">
+                        I consider myself a methodical, enthusiastic and hard-working professional, always willing to learn,
+                        to cooperate with my colleagues (team player? you name it).
+                    </p>
+                </div>
             </div>
-            <div class="col-lg-4 mr-auto">
-                <p class="lead">
-                    I consider myself a methodical, enthusiastic and hard-working professional, always willing to learn,
-                    to cooperate with my colleagues (team player? you name it!). One of my professional daily goals is
-                    to design and deliver high quality and valuable software solutions.
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-8 ml-auto mr-auto">
-                <p class="lead">
-                    When not coding or staring in front of my iMac screen, you'll probably catch me spending time with
-                    my girlfriend, hanging around with friends, listening to electronic and punk-rock music,
-                    or maybe playing video-games. <span id="face"></span>
-                </p>
-                <script>(function () {
+            <div class="row">
+                <div class="col-lg-8 ml-auto mr-auto">
+                    <p class="lead">
+                        When not staring in front of my iMac screen, you'll probably catch me spending time with
+                        my girlfriend, designing things for <a href="https://gotele.tech" target="_blank">Gotelé</a> (my brand), hanging around with friends, listening to music, skateboarding,
+                        or maybe drawing/painting/writing walls.<span id="face"></span>
+                    </p>
+                    <script>(function () {
                     document.getElementById('face').innerText = String.fromCodePoint(0x263A);
                 })();</script>
+                </div>
             </div>
-        </div>
-        <div class="text-center mt-4">
-            <a class="btn btn-xl btn-outline-light js-scroll-trigger" href="#contact">
-                <i class="fa fa-envelope mr-2"></i>
-                Can I help you? Contact me :)
-            </a>
-        </div>
-        <div class="text-center mt-4">
-            <p class="lead" style="color: #b1b1b1; font-family: 'Courier New'; font-size: medium; font-style: italic">
-                // you can also reach me on social networks!
-            </p>
+
+            <div style="text-shadow: none;">
+                <div class="text-center mt-4">
+                    <a class="btn btn-xl btn-contact btn-outline-light js-scroll-trigger" href="#contact">
+                        <i class="fa fa-envelope mr-2"></i>
+                        Can I help you? Contact me :)
+                    </a>
+                </div>
+
+                <div class="text-center mt-4">
+                    <p class="lead text-white" style="font-family: 'Courier New'; font-size: large; font-style: italic">
+                        <b>
+                            // you can also reach me on social networks
+                        </b>
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 </header>
@@ -159,7 +175,7 @@
                     <br>
                     <div id="success"></div>
                     <div class="form-group">
-                        <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Send</button>
+                        <button type="submit" class="btn btn-primary btn-xl btn-submit" id="sendMessageButton">Send</button>
                     </div>
                 </form>
             </div>
@@ -211,10 +227,7 @@
                     {{/.}}
                     {{/data.builtWith}}
                     <br/>
-                    Makeup by
-                    <a href="http://startbootstrap.com" target="_blank">Start Bootstrap</a> template.
-                    <br/>
-                    Background image credits belong to <a href="https://www.awakenings.com/">Awakenings</a>.
+                    Background image credits belong to <a href="https://gotele.tech/">Gotelé Technologies INC</a>.
                 </p>
             </div>
         </div>
@@ -224,7 +237,7 @@
 <!-- Copyright -->
 <div id="copyright" class="copyright py-4 text-center text-white">
     <div class="container">
-        <small>Copyright &copy; Arnau Aregall - aregalio.tech <span id="year"></span></small>
+        <small>Copyright &copy; Arnau Aregall <span id="year"></span>. All rights reserved.</small>
         <script>(function () {
             document.getElementById('year').innerText = new Date().getFullYear()
         })()</script>
