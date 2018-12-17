@@ -1,4 +1,4 @@
-package tech.aregalio.website.app
+package arnau.aregall.tech.app
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

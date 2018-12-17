@@ -1,13 +1,9 @@
 import org.apache.tools.ant.filters.*
 
-description = 'arnau.aregall.tech Kotlin + Spring Boot + Gradle Demo Site'
-group = 'tech.aregall.arnau'
-version = '1.0.0'
-
 buildscript {
 	ext {
-		kotlinVersion = "1.2.41"
-		springBootVersion = "2.0.2.RELEASE"
+		kotlinVersion = "1.3.0-rc-198"
+		springBootVersion = "2.1.1.RELEASE"
         repository = "https://github.com/ArnauAregall/aregalio-tech-site-kotlin"
 	}
 	repositories {
@@ -26,6 +22,25 @@ apply plugin: 'idea'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
+description = 'arnau.aregall.tech Kotlin + Spring Boot + Gradle Demo Website'
+group = 'tech.aregall.arnau'
+version = '1.0.0'
+sourceCompatibility = 1.8
+
+dependencies {
+	compile('org.springframework.boot:spring-boot-starter-mustache')
+	compile('org.springframework.boot:spring-boot-starter-web')
+	compile('org.springframework.boot:spring-boot-devtools')
+	compile('com.fasterxml.jackson.module:jackson-module-kotlin')
+	compile("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+	compile("org.jetbrains.kotlin:kotlin-reflect")
+	testCompile('org.springframework.boot:spring-boot-starter-test')
+}
+
+bootJar {
+	baseName = "arnau-aregall-tech-website"
+}
+
 compileKotlin {
 	kotlinOptions {
 		freeCompilerArgs = ["-Xjsr305=strict"]
@@ -41,16 +56,6 @@ compileTestKotlin {
 
 repositories {
 	mavenCentral()
-}
-
-dependencies {
-	compile('org.springframework.boot:spring-boot-starter-mustache')
-	compile('org.springframework.boot:spring-boot-starter-web')
-    compile('org.springframework.boot:spring-boot-devtools')
-    compile('com.fasterxml.jackson.module:jackson-module-kotlin')
-	compile("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-	compile("org.jetbrains.kotlin:kotlin-reflect")
-	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 
 idea {

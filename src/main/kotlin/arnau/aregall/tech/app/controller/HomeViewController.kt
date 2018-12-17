@@ -1,11 +1,11 @@
-package tech.aregalio.website.app.controller
+package arnau.aregall.tech.app.controller
 
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.stereotype.Controller
 import org.springframework.ui.Model
 import org.springframework.web.bind.annotation.GetMapping
-import tech.aregalio.website.app.service.HomeService
+import arnau.aregall.tech.app.service.HomeService
 
 @Controller
 class HomeViewController @Autowired constructor(

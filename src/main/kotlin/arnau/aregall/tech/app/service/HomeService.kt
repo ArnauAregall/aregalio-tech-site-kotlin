@@ -1,11 +1,11 @@
-package tech.aregalio.website.app.service
+package arnau.aregall.tech.app.service
 
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.core.env.Environment
 import org.springframework.stereotype.Service
-import tech.aregalio.website.app.domain.AboutInfo
-import tech.aregalio.website.app.domain.ContactInfo
-import tech.aregalio.website.app.domain.HomeInfo
+import arnau.aregall.tech.app.domain.AboutInfo
+import arnau.aregall.tech.app.domain.ContactInfo
+import arnau.aregall.tech.app.domain.HomeInfo
 
 @Service
 class HomeService @Autowired constructor(
@@ -18,7 +18,7 @@ class HomeService @Autowired constructor(
         var homeInfo: HomeInfo = HomeInfo(
                 greeting = "Hello!",
                 about = AboutInfo(
-                        firstName = "Arnau",
+                        firstName = "AAA  rnau",
                         lastName = "Aregall",
                         nickname = "${env.get("app.contact.nickname")}",
                         job = "Senior Software Architect and Digital Transformation Consultant",

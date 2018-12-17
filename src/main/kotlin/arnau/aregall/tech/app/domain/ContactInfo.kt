@@ -1,4 +1,4 @@
-package tech.aregalio.website.app.domain
+package arnau.aregall.tech.app.domain
 
 class ContactInfo(
         val email: String,
